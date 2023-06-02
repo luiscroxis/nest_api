@@ -1,6 +1,6 @@
 {  
-  "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --config ./.prettierrc.js --write"],
-    "**/*.{css,scss,md,html,json}": ["prettier --config ./.prettierrc.js --write"]
-  }
+ "*.ts": [
+  "npm run lint:fix",
+  "npm run test:staged"
+ ]
 }
